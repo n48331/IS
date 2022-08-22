@@ -26,15 +26,17 @@ $(document).ready(function () {
     var avg_time = time / data.length;
     $("table").html(display);
     if (isNaN(avg_time)) {
-      $("h2").text("Enter value properly");
+      $("#track_result").html(
+        '<h2 style="color:red">Enter value properly</h2>'
+      );
     } else {
-      $("h2").html(
-        "Average time : " +
+      $("#track_result").html(
+        "<h2 style='color:#12AD2B'>Average time : " +
           avg_time.toFixed(2) +
           " sec" +
           " <span>(" +
           avg_time +
-          "sec)</span>"
+          "sec)</span></h2>"
       );
     }
   });
