@@ -5,22 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Indian Syndicate</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
-        input {
-            padding: 20px;
-            font-size: 20px;
-            width: 40%;
-            background-color: yellow;
-        }
+
     </style>
 </head>
 
 <body>
-    <input type="text" placeholder="1000-65.7,1200-72.5,....">
-    <h1></h1>
-    <h2></h2>
+    <main>
+        <section class="center">
+            <p>Enter in format : d1-t1,d2-t2,... <br>
+                Eg:1200-72.63,800-65.5,1000-68.12
+            </p>
+            <input class="track_input" type="text" placeholder="1000-65.7,1200-72.5,....">
+            <button class="track_button" role="button">Calculate</button>
+            <table class="track_table" border="1">
+            </table>
+            <h2></h2>
+        </section>
+    </main>
     <script src="./js/script.js"></script>
 </body>
 
