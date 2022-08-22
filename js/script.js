@@ -28,7 +28,14 @@ $(document).ready(function () {
     if (isNaN(avg_time)) {
       $("h2").text("Enter value properly");
     } else {
-      $("h2").text("Average time : " + avg_time.toFixed(2) + " sec");
+      $("h2").html(
+        "Average time : " +
+          avg_time.toFixed(2) +
+          " sec" +
+          " <span>(" +
+          avg_time +
+          "sec)</span>"
+      );
     }
   });
 });

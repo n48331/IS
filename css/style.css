@@ -39,6 +39,10 @@ body {
     margin: 0 auto;
 }
 
+h2>span {
+    font-size: 14px;
+    font-weight: normal;
+}
 
 
 /* CSS */
